@@ -1,0 +1,25 @@
+.home__container {
+  width: 90%;
+  margin: auto;
+  padding: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+/* Media query para dispositivos com largura máxima de 768px */
+@media (max-width: 768px) {
+  .home__container {
+    flex-direction: column; /* Faz os itens serem empilhados em coluna */
+    align-items: center; /* Alinha os itens ao centro */
+    align-content: center;
+    padding: 11rem 1rem; /* Ajusta o padding superior/inferior para 3rem e lateral para 1rem */
+  }
+
+  .home__container > * { /* Seletor para todos os itens diretos dentro do container */
+    width: 100%; /* Define a largura para 100% para cada card preencher o container */
+    margin-bottom: 2rem; /* Adiciona espaço abaixo de cada card */
+  }
+}
+
